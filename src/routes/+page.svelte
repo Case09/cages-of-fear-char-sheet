@@ -78,21 +78,21 @@
     <div class="flex gap-20 items-center">
       <div class="mt-2 space-y-2">
         <label for="name" class="flex flex-col">
-          <span class="text-xs text-orange-600">Name</span>
+          <span class="text-xs pb-1 text-orange-600">Name</span>
           <input class="h-8 w-[250px] border border-black p-2" type="text" bind:value={name} name="name">
         </label>
         <label for="class" class="flex flex-col">
-          <span class="text-xs text-orange-600">Class</span>
+          <span class="text-xs pb-1 text-orange-600">Class <span class="text-black">(Footman, Magister or Brigand)</span></span>
           <input class="h-8 w-1/2 border border-black p-2" type="text" bind:value={clas} name="class">
         </label>
       </div>
       <div class="flex gap-4">
         <label for="name" class="flex flex-col justify-center">
-          <span class="text-xs text-orange-600">Current health</span>
+          <span class="text-xs pb-1 text-orange-600">Current health</span>
           <input class="h-8 w-[60px] border border-black p-2" type="number" min="0" bind:value={currentHealth} name="name">
         </label>
         <label for="class" class="flex flex-col justify-center">
-          <span class="text-xs text-orange-600">Current monster health</span>
+          <span class="text-xs pb-1 text-orange-600">Current monster health</span>
           <input class="h-8 w-[60px] border border-black p-2" type="number" min="0" bind:value={currentMonsterHealth} name="class">
         </label>
       </div>
@@ -135,34 +135,34 @@
         <div class="flex gap-4 mt-4 items-end">
           <div>
             <div class="exp-grid flex">
-              <div class="w-[20px] h-[20px] border border-r-0 border-black"></div>
-              <div class="w-[20px] h-[20px] border-4 border-black relative with-dot-bordered"></div>
-              <div class="w-[20px] h-[20px] border border-l-0 border-black"></div>
-              <div class="w-[20px] h-[20px] border border-l-0 border-r-0 border-black relative with-dot"></div>
-              <div class="w-[20px] h-[20px] border-4 border-black relative"></div>
-              <div class="w-[20px] h-[20px] border border-l-0 border-black"></div>
-              <div class="w-[20px] h-[20px] border border-l-0 border-black relative with-dot"></div>
-              <div class="w-[20px] h-[20px] border border-l-0 border-r-0 border-black"></div>
-              <div class="w-[20px] h-[20px] border-4 border-black"></div>
-              <div class="w-[20px] h-[20px] border border-l-0 border-black relative with-dot"></div>
+              <div class="w-[20px] h-[20px] border border-r-0 border-black" class:bg-orange-200={exp >= 1}></div>
+              <div class="w-[20px] h-[20px] border-4 border-black relative with-dot-bordered" class:bg-orange-200={exp >= 2}></div>
+              <div class="w-[20px] h-[20px] border border-l-0 border-black" class:bg-orange-200={exp >= 3}></div>
+              <div class="w-[20px] h-[20px] border border-l-0 border-r-0 border-black relative with-dot" class:bg-orange-200={exp >= 4}></div>
+              <div class="w-[20px] h-[20px] border-4 border-black relative" class:bg-orange-200={exp >= 5}></div>
+              <div class="w-[20px] h-[20px] border border-l-0 border-black" class:bg-orange-200={exp >= 6}></div>
+              <div class="w-[20px] h-[20px] border border-l-0 border-black relative with-dot" class:bg-orange-200={exp >= 7}></div>
+              <div class="w-[20px] h-[20px] border border-l-0 border-r-0 border-black" class:bg-orange-200={exp >= 8}></div>
+              <div class="w-[20px] h-[20px] border-4 border-black" class:bg-orange-200={exp >= 9}></div>
+              <div class="w-[20px] h-[20px] border border-l-0 border-black relative with-dot" class:bg-orange-200={exp >= 10}></div>
             </div>
             <div class="exp-grid flex pt-[1px]">
-              <div class="w-[20px] h-[20px] border border-r-0 border-black"></div>
-              <div class="w-[20px] h-[20px] border border-black"></div>
-              <div class="w-[20px] h-[20px] border border-l-0 border-r-0 border-black relative with-dot"></div>
-              <div class="w-[20px] h-[20px] border-4 border-black"></div>
-              <div class="w-[20px] h-[20px] border border-black"></div>
-              <div class="w-[20px] h-[20px] border border-l-0 border-black relative with-dot"></div>
-              <div class="w-[20px] h-[20px] border border-black border-l-0"></div>
-              <div class="w-[20px] h-[20px] border border-black border-l-0"></div>
-              <div class="w-[20px] h-[20px] border border-l-0 border-black relative with-dot"></div>
-              <div class="w-[20px] h-[20px] border-4 border-black"></div>
+              <div class="w-[20px] h-[20px] border border-r-0 border-black" class:bg-orange-200={exp >= 11}></div>
+              <div class="w-[20px] h-[20px] border border-black" class:bg-orange-200={exp >= 12}></div>
+              <div class="w-[20px] h-[20px] border border-l-0 border-r-0 border-black relative with-dot" class:bg-orange-200={exp >= 13}></div>
+              <div class="w-[20px] h-[20px] border-4 border-black" class:bg-orange-200={exp >= 14}></div>
+              <div class="w-[20px] h-[20px] border border-black" class:bg-orange-200={exp >= 15}></div>
+              <div class="w-[20px] h-[20px] border border-l-0 border-black relative with-dot" class:bg-orange-200={exp >= 16}></div>
+              <div class="w-[20px] h-[20px] border border-black border-l-0" class:bg-orange-200={exp >= 17}></div>
+              <div class="w-[20px] h-[20px] border border-black border-l-0" class:bg-orange-200={exp >= 18}></div>
+              <div class="w-[20px] h-[20px] border border-l-0 border-black relative with-dot" class:bg-orange-200={exp >= 19}></div>
+              <div class="w-[20px] h-[20px] border-4 border-black" class:bg-orange-200={exp === 20}></div>
             </div>
           </div>
 
           <label for="name" class="flex flex-col justify-center">
-            <span class="text-xs text-orange-600">Level</span>
-            <input class="h-8 w-[60px] border border-black p-2" type="number" bind:value={exp} name="exp">
+            <span class="text-xs text-orange-600">Experience</span>
+            <input class="h-8 w-[60px] border border-black p-2" type="number" min="0" max="20" bind:value={exp} name="exp">
           </label>
         </div>
 
@@ -177,23 +177,23 @@
     <div class="flex flex-col w-full gap-2 mt-4">
       <label for="name" class="flex flex-col justify-center">
         <span class="text-xs pb-1 text-orange-600">Gold</span>
-        <input class="h-8 w-[60px] border border-black p-2" type="number" bind:value={gold} name="gold">
+        <input class="h-8 w-[60px] border border-black p-2" type="number" min="0" max="12" bind:value={gold} name="gold">
       </label>
       <label for="class" class="flex flex-col justify-center">
         <span class="text-xs pb-1 text-orange-600">Potions <span class="text-black">(Consume to restore health by d6 + intellect)</span></span>
-        <input class="h-8 w-[60px] border border-black p-2" type="number" min="0" bind:value={potions} name="potions">
+        <input class="h-8 w-[60px] border border-black p-2" type="number" min="0" max="6" bind:value={potions} name="potions">
       </label>
       <label for="class" class="flex flex-col justify-center">
         <span class="text-xs pb-1 text-orange-600">Lockpicks <span class="text-black">(Consume to open a locked chest)</span></span>
-        <input class="h-8 w-[60px] border border-black p-2" type="number" min="0" bind:value={lockpicks} name="lockpicks">
+        <input class="h-8 w-[60px] border border-black p-2" type="number" min="0" max="6" bind:value={lockpicks} name="lockpicks">
       </label>
       <label for="class" class="flex flex-col justify-center">
         <span class="text-xs pb-1 text-orange-600">Spells <span class="text-black">(Consume to damage an enemy by d6 +)</span></span>
-        <input class="h-8 w-[60px] border border-black p-2" type="number" min="0" bind:value={spells} name="spells">
+        <input class="h-8 w-[60px] border border-black p-2" type="number" min="0" max="6" bind:value={spells} name="spells">
       </label>
       <label for="class" class="flex flex-col justify-center">
         <span class="text-xs pb-1 text-orange-600">Pack <span class="text-black">(You may sell items to a merchant for 1 gold each)</span></span>
-        <input class="h-8 w-[60px] border border-black p-2" type="number" max="2" min="0" bind:value={items} name="items">
+        <input class="h-8 w-[60px] border border-black p-2" type="number" min="0" max="2" bind:value={items} name="items">
       </label>
     </div>
   </div>
