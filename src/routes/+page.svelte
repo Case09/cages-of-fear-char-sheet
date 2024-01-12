@@ -188,7 +188,7 @@
         <input class="h-8 w-[60px] border border-black p-2" type="number" min="0" max="6" bind:value={lockpicks} name="lockpicks">
       </label>
       <label for="class" class="flex flex-col justify-center">
-        <span class="text-xs pb-1 text-orange-600">Spells <span class="text-black">(Consume to damage an enemy by d6 +)</span></span>
+        <span class="text-xs pb-1 text-orange-600">Spells <span class="text-black">(Consume to damage an enemy by d6 + intellect)</span></span>
         <input class="h-8 w-[60px] border border-black p-2" type="number" min="0" max="6" bind:value={spells} name="spells">
       </label>
       <label for="class" class="flex flex-col justify-center">
