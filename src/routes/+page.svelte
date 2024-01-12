@@ -107,21 +107,21 @@
       <div class="mt-6 p-2 w-80 border border-black">
         <span class="text-xs"><span class="text-orange-600">Damage</span> (base + modifier)</span>
         <label for="damage-base" class="flex items-center">
-          <input class="h-8 w-1/6 border border-black p-2" min="0" type="number" bind:value={damageBase} name="damage-base">
+          <input class="h-8 w-[60px] border border-black p-2" min="0" type="number" bind:value={damageBase} name="damage-base">
           <input class="h-8 w-1/2 border border-l-0 border-spacing-0 border-black p-2" min="0" type="number" bind:value={damageMod} name="damage-mod">
           <span class="pl-2 text-orange-600">Total: {damageBase + damageMod}</span>
         </label>
 
         <span class="text-xs"><span class="text-orange-600">Intellect</span> (base + modifier)</span>
         <label for="intellect-base" class="flex items-center">
-          <input class="h-8 w-1/6 border border-black p-2" min="0" type="number" bind:value={intellectBase} name="intellect-base">
+          <input class="h-8 w-[60px] border border-black p-2" min="0" type="number" bind:value={intellectBase} name="intellect-base">
           <input class="h-8 w-1/2 border border-l-0 border-spacing-0 border-black p-2" min="0" type="number" bind:value={intellectMod} name="intellect-mod">
           <span class="pl-2 text-orange-600">Total: {intellectBase + intellectMod}</span>
         </label>
 
         <span class="text-xs"><span class="text-orange-600">Health</span> (base + modifier)</span>
         <label for="health-base" class="flex items-center">
-          <input class="h-8 w-1/6 border border-black p-2" min="0" type="number" bind:value={healthBase} name="health-base">
+          <input class="h-8 w-[60px] border border-black p-2" min="0" type="number" bind:value={healthBase} name="health-base">
           <input class="h-8 w-1/2 border border-l-0 border-spacing-0 border-black p-2" min="0" type="number" bind:value={healthMod} name="health-mod">
           <span class="pl-2 text-orange-600">Total: {healthBase + healthMod}</span>
         </label>
