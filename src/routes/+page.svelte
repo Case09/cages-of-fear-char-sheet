@@ -73,7 +73,7 @@
 </script>
 
 <div class="h-screen flex flex-col items-center justify-center">
-  <div class="char-sheet p-6 bg-yellow-50">
+  <div class="char-sheet p-4 bg-yellow-50">
     <h1 class="text-xl font-bold tracking-wide">Cages of Fear character sheet</h1>
     <div class="flex gap-20 items-center">
       <div class="mt-2 space-y-2">
